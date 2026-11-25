@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 9 9 9;
+  --foreground: 248 245 239;
+  --ink: #090909;
+  --charcoal: #151515;
+  --red: #b5121b;
+  --deep-red: #820c14;
+  --gold: #f5bb36;
+  --bright-gold: #ffd15a;
+  --warm: #f8f5ef;
+  --muted: #a39e95;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html, body { overflow-x: hidden; max-width: 100%; }
+body { margin: 0; background: var(--ink); color: var(--warm); font-family: Arial, Helvetica, sans-serif; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+
+img, picture { max-width: 100%; display: block; }
+
+@layer components {
+  .font-display { font-family: Georgia, 'Times New Roman', serif; }
+  .bg-ink { background-color: var(--ink); }
+  .bg-charcoal { background-color: var(--charcoal); }
+  .text-warm { color: var(--warm); }
+  .text-gold { color: var(--gold); }
+  .bg-gold { background-color: var(--gold); }
+  .bg-brightGold { background-color: var(--bright-gold); }
+  .bg-red { background-color: var(--red); }
+  .eyebrow { color: var(--gold); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.28em; line-height: 1.4; text-transform: uppercase; }
+  .hairline { height: 1px; background: linear-gradient(90deg, transparent, rgba(245, 187, 54, .65), transparent); }
+  .gold-ring { box-shadow: inset 0 0 0 1px rgba(245, 187, 54, .35); }
+}
+
+/* Fluid display headings: compact on mobile, scale up on larger screens */
+@layer utilities {
+  .text-display-hero {
+    font-size: clamp(2.25rem, 9vw, 3rem);
+    line-height: 1.08;
+  }
+  .text-display-section {
+    font-size: clamp(1.9rem, 6.5vw, 3rem);
+    line-height: 1.1;
+  }
+  .text-display-page {
+    font-size: clamp(2.1rem, 8vw, 3.5rem);
+    line-height: 1.05;
+  }
+  .safe-pt { padding-top: env(safe-area-inset-top); }
+  .safe-pb { padding-bottom: env(safe-area-inset-bottom); }
+  .mb-inset { margin-bottom: calc(env(safe-area-inset-bottom) + 0px); }
+  .pb-inset { padding-bottom: calc(env(safe-area-inset-bottom) + 1rem); }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .hero-bg {
+    background-image: url('/images/food/image.png');
+    background-size: cover;
+    background-position: 78% center;
+    background-repeat: no-repeat;
+  }
+  .touch-target { min-height: 44px; min-width: 44px; }
+}
+
+::selection { background: var(--gold); color: var(--ink); }
+
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
