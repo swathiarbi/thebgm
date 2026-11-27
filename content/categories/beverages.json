@@ -1,0 +1,8 @@
+{
+  "id": "82cb830c-2471-4d22-8452-9567b360f99c",
+  "name": "Beverages",
+  "slug": "beverages",
+  "image_url": "/images/menu/shared-biryani.webp",
+  "display_order": 10,
+  "is_active": true
+}

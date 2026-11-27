@@ -6,6 +6,7 @@ import { PageFrame } from '@/components/restaurant/site-shell';
 import { SectionHeading } from '@/components/restaurant/section-heading';
 import { CategoryTile, MenuCard } from '@/components/restaurant/menu-card';
 import { useRestaurantData } from '@/components/restaurant/data-hooks';
+import { categories, items } from '@/lib/menu';
 import { fallbackSettings } from '@/lib/types';
 
 const highlights = [
@@ -15,7 +16,7 @@ const highlights = [
 ];
 
 export default function Home() {
-  const { settings, categories, items, promotions, gallery, testimonials, loading } = useRestaurantData();
+  const { settings, promotions, gallery, testimonials } = useRestaurantData();
   const featured = items.filter((item) => item.is_featured).slice(0, 6);
   const visibleFeatured = featured.length ? featured : items.slice(0, 6);
   const reviewPreview = testimonials.filter((review) => review.is_published).slice(0, 3);
@@ -55,7 +56,7 @@ export default function Home() {
 
     <section className="border-b border-white/10 bg-charcoal/45"><div className="mx-auto grid max-w-7xl gap-px bg-white/10 sm:grid-cols-3">{highlights.map(({ icon: Icon, title, copy }) => <div key={title} className="bg-charcoal px-5 py-7 sm:px-8 sm:py-8"><Icon size={22} className="text-gold" /><h2 className="mt-3 font-display text-xl font-bold text-white sm:mt-4">{title}</h2><p className="mt-2 text-sm leading-6 text-white/50">{copy}</p></div>)}</div></section>
 
-    <section className="mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8 lg:py-24"><div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end sm:gap-8"><SectionHeading eyebrow="From the grill" title="BGM favourites" copy="Start with the dishes our kitchen is proud to put on your table." /><Link href="/menu" className="inline-flex items-center gap-2 pb-1 text-sm font-bold uppercase tracking-wider text-gold transition hover:text-brightGold">View full menu <ArrowUpRight size={16} /></Link></div>{loading ? <div className="mt-10 h-72 animate-pulse rounded-2xl bg-charcoal" /> : visibleFeatured.length ? <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">{visibleFeatured.map((item) => <MenuCard key={item.id} item={item} category={item.category} />)}</div> : <div className="mt-10 rounded-2xl border border-dashed border-white/15 px-6 py-16 text-center text-white/45">The menu is being prepared. Please check back shortly.</div>}</section>
+    <section className="mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8 lg:py-24"><div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end sm:gap-8"><SectionHeading eyebrow="From the grill" title="BGM favourites" copy="Start with the dishes our kitchen is proud to put on your table." /><Link href="/menu" className="inline-flex items-center gap-2 pb-1 text-sm font-bold uppercase tracking-wider text-gold transition hover:text-brightGold">View full menu <ArrowUpRight size={16} /></Link></div>{visibleFeatured.length ? <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">{visibleFeatured.map((item) => <MenuCard key={item.id} item={item} category={item.category} />)}</div> : <div className="mt-10 rounded-2xl border border-dashed border-white/15 px-6 py-16 text-center text-white/45">The menu is being prepared. Please check back shortly.</div>}</section>
 
     <section className="border-y border-white/10 bg-charcoal/35"><div className="mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8 lg:py-24"><SectionHeading eyebrow="Find your flavour" title="Explore the menu" copy="From smoky tandoori plates to cold coffee, choose your kind of craving." /><div className="mt-8 grid gap-3 sm:mt-10 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">{categories.slice(0, 8).map((category) => <CategoryTile key={category.id} category={category} itemCount={items.filter((item) => item.category_id === category.id).length} />)}</div></div></section>
 

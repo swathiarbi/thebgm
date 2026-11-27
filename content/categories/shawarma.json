@@ -1,0 +1,8 @@
+{
+  "id": "5ca04561-5000-4f80-a28d-05c748adf279",
+  "name": "Shawarma",
+  "slug": "shawarma",
+  "image_url": "/images/menu/shared-biryani.webp",
+  "display_order": 7,
+  "is_active": true
+}
