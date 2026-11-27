@@ -7,7 +7,7 @@
       "slug": "mutton-fry",
       "description": "A rich mutton favourite with a satisfying finish.",
       "price": 249,
-      "image_url": null,
+      "image_url": "/images/menu/mutton-fry.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 1
@@ -19,7 +19,7 @@
       "slug": "tandoori-chicken-half",
       "description": "A classic tandoori favourite for sharing or savouring solo.",
       "price": 229,
-      "image_url": null,
+      "image_url": "/images/menu/tandoori-chicken-half.jpg",
       "is_available": true,
       "is_featured": true,
       "display_order": 1
@@ -31,7 +31,7 @@
       "slug": "shawarma-roll",
       "description": "A simple shawarma option for easy takeaway.",
       "price": 99,
-      "image_url": null,
+      "image_url": "/images/menu/shawarma-roll.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 1
@@ -43,7 +43,7 @@
       "slug": "hyderabadi-chicken-biryani",
       "description": "A fragrant biryani favourite from our kitchen.",
       "price": 199,
-      "image_url": null,
+      "image_url": "/images/menu/hyderabadi-chicken-biryani.jpg",
       "is_available": true,
       "is_featured": true,
       "display_order": 1
@@ -55,7 +55,7 @@
       "slug": "classic-cheese-fries",
       "description": "Golden fries with a rich, comforting cheese finish.",
       "price": 129,
-      "image_url": null,
+      "image_url": "/images/menu/classic-cheese-fries.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 1
@@ -67,7 +67,7 @@
       "slug": "masala-soda",
       "description": "A refreshing pick-me-up to pair with your meal.",
       "price": 39,
-      "image_url": null,
+      "image_url": "/images/menu/masala-soda.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 1
@@ -79,7 +79,7 @@
       "slug": "classic-shawarma",
       "description": "A familiar shawarma favourite for a quick, filling bite.",
       "price": 119,
-      "image_url": null,
+      "image_url": "/images/menu/classic-shawarma.jpg",
       "is_available": true,
       "is_featured": true,
       "display_order": 1
@@ -91,7 +91,7 @@
       "slug": "chicken-fry",
       "description": "A timeless crispy chicken favourite.",
       "price": 179,
-      "image_url": null,
+      "image_url": "/images/menu/chicken-fry.jpg",
       "is_available": true,
       "is_featured": true,
       "display_order": 1
@@ -103,7 +103,7 @@
       "slug": "reshmi-kabab",
       "description": "A tender-looking kabab choice for a classic starter plate.",
       "price": 199,
-      "image_url": null,
+      "image_url": "/images/menu/reshmi-kabab.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 1
@@ -115,7 +115,7 @@
       "slug": "chicken-curry",
       "description": "A comforting curry choice for a satisfying meal.",
       "price": 139,
-      "image_url": null,
+      "image_url": "/images/menu/chicken-curry.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 1
@@ -127,7 +127,7 @@
       "slug": "hyderabadi-mutton-biryani",
       "description": "A hearty biryani selection for a rich, satisfying meal.",
       "price": 249,
-      "image_url": null,
+      "image_url": "/images/menu/hyderabadi-mutton-biryani.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 2
@@ -139,7 +139,7 @@
       "slug": "mutton-sukka",
       "description": "A homestyle mutton special with bold character.",
       "price": 249,
-      "image_url": null,
+      "image_url": "/images/menu/mutton-sukka.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 2
@@ -151,7 +151,7 @@
       "slug": "mutton-curry",
       "description": "A hearty curry pick with rich, familiar appeal.",
       "price": 179,
-      "image_url": null,
+      "image_url": "/images/menu/mutton-curry.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 2
@@ -163,7 +163,7 @@
       "slug": "peri-peri-shawarma",
       "description": "A lively shawarma choice with peri peri energy.",
       "price": 129,
-      "image_url": null,
+      "image_url": "/images/menu/peri-peri-shawarma.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 2
@@ -175,7 +175,7 @@
       "slug": "shawarma-plate",
       "description": "A plate-style shawarma option for a more relaxed meal.",
       "price": 129,
-      "image_url": null,
+      "image_url": "/images/menu/shawarma-plate.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 2
@@ -187,7 +187,7 @@
       "slug": "kabab-platter",
       "description": "A generous platter made for sharing and exploring.",
       "price": 399,
-      "image_url": null,
+      "image_url": "/images/menu/kabab-platter.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 2
@@ -199,7 +199,7 @@
       "slug": "chicken-sukka",
       "description": "A bold chicken special with a homestyle feel.",
       "price": 179,
-      "image_url": null,
+      "image_url": "/images/menu/chicken-sukka.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 2
@@ -211,7 +211,7 @@
       "slug": "tandoori-chicken-full",
       "description": "A generous tandoori centrepiece for the table.",
       "price": 399,
-      "image_url": null,
+      "image_url": "/images/menu/tandoori-chicken-full.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 2
@@ -223,7 +223,7 @@
       "slug": "fresh-lime-soda",
       "description": "A bright, refreshing classic.",
       "price": 39,
-      "image_url": null,
+      "image_url": "/images/menu/fresh-lime-soda.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 2
@@ -235,7 +235,7 @@
       "slug": "peri-peri-fries",
       "description": "Crispy fries with a lively peri peri kick.",
       "price": 129,
-      "image_url": null,
+      "image_url": "/images/menu/peri-peri-fries.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 2
@@ -247,7 +247,7 @@
       "slug": "chicken-tikka",
       "description": "Juicy chicken tikka with a charred, comforting finish.",
       "price": 199,
-      "image_url": null,
+      "image_url": "/images/menu/chicken-tikka.jpg",
       "is_available": true,
       "is_featured": true,
       "display_order": 3
@@ -259,7 +259,7 @@
       "slug": "bbq-fries",
       "description": "A smoky-sweet loaded fries favourite.",
       "price": 129,
-      "image_url": null,
+      "image_url": "/images/menu/bbq-fries.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 3
@@ -271,7 +271,7 @@
       "slug": "cold-coffee",
       "description": "A chilled coffee break for your BGM meal.",
       "price": 59,
-      "image_url": null,
+      "image_url": "/images/menu/cold-coffee.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 3
@@ -283,7 +283,7 @@
       "slug": "chicken-65",
       "description": "A crowd-pleasing chicken classic with plenty of flavour.",
       "price": 199,
-      "image_url": null,
+      "image_url": "/images/menu/chicken-65.jpg",
       "is_available": true,
       "is_featured": true,
       "display_order": 3
@@ -295,7 +295,7 @@
       "slug": "egg-curry",
       "description": "A classic curry favourite for an easy, comforting plate.",
       "price": 99,
-      "image_url": null,
+      "image_url": "/images/menu/egg-curry.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 3
@@ -307,7 +307,7 @@
       "slug": "beef-kabab",
       "description": "A hearty kabab pick with a satisfying grilled character.",
       "price": 219,
-      "image_url": null,
+      "image_url": "/images/menu/beef-kabab.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 3
@@ -319,7 +319,7 @@
       "slug": "bbq-shawarma",
       "description": "A smoky BBQ-inspired shawarma favourite.",
       "price": 129,
-      "image_url": null,
+      "image_url": "/images/menu/bbq-shawarma.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 3
@@ -331,7 +331,7 @@
       "slug": "nati-style-chicken-biryani",
       "description": "A homestyle chicken biryani with bold local character.",
       "price": 199,
-      "image_url": null,
+      "image_url": "/images/menu/nati-style-chicken-biryani.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 3
@@ -343,7 +343,7 @@
       "slug": "mutton-chukka",
       "description": "A hearty mutton dish for a deeply savoury meal.",
       "price": 249,
-      "image_url": null,
+      "image_url": "/images/menu/mutton-chukka.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 3
@@ -355,7 +355,7 @@
       "slug": "nati-style-mutton-biryani",
       "description": "A generous mutton biryani made for a full-flavoured feast.",
       "price": 249,
-      "image_url": null,
+      "image_url": "/images/menu/nati-style-mutton-biryani.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 4
@@ -367,7 +367,7 @@
       "slug": "achari-chicken-tikka",
       "description": "Chicken tikka with a bright, tangy achari profile.",
       "price": 219,
-      "image_url": null,
+      "image_url": "/images/menu/achari-chicken-tikka.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 4
@@ -379,7 +379,7 @@
       "slug": "mexican-loaded-fries",
       "description": "A bold, loaded fries pick with a Mexican-inspired mood.",
       "price": 149,
-      "image_url": null,
+      "image_url": "/images/menu/mexican-loaded-fries.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 4
@@ -391,7 +391,7 @@
       "slug": "chicken-lollipop-8-pcs",
       "description": "Eight pieces of a fun, shareable chicken favourite.",
       "price": 199,
-      "image_url": null,
+      "image_url": "/images/menu/chicken-lollipop-8-pcs.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 4
@@ -403,7 +403,7 @@
       "slug": "fish-fry",
       "description": "A crispy seafood favourite for a bright, savoury bite.",
       "price": 199,
-      "image_url": null,
+      "image_url": "/images/menu/fish-fry.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 4
@@ -415,7 +415,7 @@
       "slug": "mutton-pepper-fry",
       "description": "A warming mutton special with peppery appeal.",
       "price": 249,
-      "image_url": null,
+      "image_url": "/images/menu/mutton-pepper-fry.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 4
@@ -427,7 +427,7 @@
       "slug": "garlic-mayo-shawarma",
       "description": "A creamy, comforting shawarma choice.",
       "price": 129,
-      "image_url": null,
+      "image_url": "/images/menu/garlic-mayo-shawarma.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 4
@@ -439,7 +439,7 @@
       "slug": "chicken-masala",
       "description": "A versatile chicken special with a rich masala mood.",
       "price": 149,
-      "image_url": null,
+      "image_url": "/images/menu/chicken-masala.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 4
@@ -451,7 +451,7 @@
       "slug": "milkshake",
       "description": "A cool, comforting shake selection.",
       "price": 69,
-      "image_url": null,
+      "image_url": "/images/menu/milkshake.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 4
@@ -463,7 +463,7 @@
       "slug": "spicy-schezwan-shawarma",
       "description": "A bold shawarma pick with a spicy Schezwan mood.",
       "price": 139,
-      "image_url": null,
+      "image_url": "/images/menu/spicy-schezwan-shawarma.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 5
@@ -475,7 +475,7 @@
       "slug": "soft-drinks",
       "description": "A familiar chilled refreshment.",
       "price": 39,
-      "image_url": null,
+      "image_url": "/images/menu/soft-drinks.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 5
@@ -487,7 +487,7 @@
       "slug": "mutton-masala-indian",
       "description": "A warming mutton masala for a full-flavoured meal.",
       "price": 179,
-      "image_url": null,
+      "image_url": "/images/menu/mutton-masala-indian.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 5
@@ -499,7 +499,7 @@
       "slug": "prawns-fry",
       "description": "A flavourful prawns selection for seafood cravings.",
       "price": 299,
-      "image_url": null,
+      "image_url": "/images/menu/prawns-fry.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 5
@@ -511,7 +511,7 @@
       "slug": "chicken-manchurian",
       "description": "A saucy chicken special with a familiar Indo-Chinese mood.",
       "price": 199,
-      "image_url": null,
+      "image_url": "/images/menu/chicken-manchurian.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 5
@@ -523,7 +523,7 @@
       "slug": "chatpata-masala-fries",
       "description": "Crispy fries with a chatpata masala finish.",
       "price": 149,
-      "image_url": null,
+      "image_url": "/images/menu/chatpata-masala-fries.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 5
@@ -535,7 +535,7 @@
       "slug": "hariyali-chicken-tikka",
       "description": "A fresh-looking green-hued tikka favourite.",
       "price": 219,
-      "image_url": null,
+      "image_url": "/images/menu/hariyali-chicken-tikka.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 5
@@ -547,7 +547,7 @@
       "slug": "mutton-masala",
       "description": "A comforting mutton favourite for a full-flavoured plate.",
       "price": 249,
-      "image_url": null,
+      "image_url": "/images/menu/mutton-masala.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 5
@@ -559,7 +559,7 @@
       "slug": "tandoori-mayo-fries",
       "description": "Loaded fries with a creamy tandoori-style finish.",
       "price": 149,
-      "image_url": null,
+      "image_url": "/images/menu/tandoori-mayo-fries.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 6
@@ -571,7 +571,7 @@
       "slug": "water-bottle",
       "description": "A simple essential for the table.",
       "price": 20,
-      "image_url": null,
+      "image_url": "/images/menu/water-bottle.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 6
@@ -583,7 +583,7 @@
       "slug": "mutton-keema-ball",
       "description": "A distinctive mutton keema selection in a shareable format.",
       "price": 229,
-      "image_url": null,
+      "image_url": "/images/menu/mutton-keema-ball.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 6
@@ -595,7 +595,7 @@
       "slug": "malai-tikka",
       "description": "A mellow, indulgent tikka choice for creamy flavour lovers.",
       "price": 229,
-      "image_url": null,
+      "image_url": "/images/menu/malai-tikka.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 6
@@ -607,7 +607,7 @@
       "slug": "mutton-keema-fry",
       "description": "A rich keema favourite for a satisfying meal.",
       "price": 249,
-      "image_url": null,
+      "image_url": "/images/menu/mutton-keema-fry.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 7
@@ -619,7 +619,7 @@
       "slug": "tandoori-kebabs-2-pcs",
       "description": "Two smoky kebabs for a quick grilled bite.",
       "price": 149,
-      "image_url": null,
+      "image_url": "/images/menu/tandoori-kebabs-2-pcs.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 7
@@ -631,7 +631,7 @@
       "slug": "chicken-seekh-kebab-4-pcs",
       "description": "Four hearty seekh kebabs with classic grilled appeal.",
       "price": 249,
-      "image_url": null,
+      "image_url": "/images/menu/chicken-seekh-kebab-4-pcs.jpg",
       "is_available": true,
       "is_featured": false,
       "display_order": 8
