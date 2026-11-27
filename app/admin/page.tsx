@@ -1,10 +1,12 @@
 import { redirect } from 'next/navigation';
-import { getServerSupabase } from '@/lib/supabase';
+import { menuEditor } from '@/lib/menu-editor';
+import { getServerSupabase, supabaseUrl, supabaseAnonKey } from '@/lib/supabase';
 import AdminDashboard from '@/components/restaurant/admin-dashboard';
 
 export const dynamic = 'force-dynamic';
 
 export default async function AdminPage() {
+  if (!supabaseUrl || !supabaseAnonKey) redirect(menuEditor);
   const supabase = getServerSupabase();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) redirect('/admin/login');
