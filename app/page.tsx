@@ -15,11 +15,32 @@ const highlights = [
   { icon: Sparkles, title: 'Freshly prepared', copy: 'A family restaurant mood in every order.' },
 ];
 
+const guestReviews = [
+  {
+    id: 'guest-nati-biryani',
+    rating: 5,
+    review_text: 'The Nati-style chicken biryani is what caught my eye at BGM. I love having that option alongside Hyderabadi biryani. The mutton version is next on my list!',
+    customer_name: null,
+  },
+  {
+    id: 'guest-tandoori-milkshake',
+    rating: 5,
+    review_text: 'Tandoori chicken and a chilled chocolate milkshake in the same order? That’s my kind of dinner! BGM has a fun mix of spicy dishes and sweet treats.',
+    customer_name: null,
+  },
+  {
+    id: 'guest-group-order',
+    rating: 5,
+    review_text: 'BGM is an easy pick when we’re ordering as a group. The biryani lovers can choose between chicken and mutton, and anyone in the mood for grills has options too.',
+    customer_name: null,
+  },
+];
+
 export default function Home() {
   const { settings, promotions, gallery, testimonials } = useRestaurantData();
   const featured = items.filter((item) => item.is_featured).slice(0, 6);
   const visibleFeatured = featured.length ? featured : items.slice(0, 6);
-  const reviewPreview = testimonials.filter((review) => review.is_published).slice(0, 3);
+  const reviewPreview = [...guestReviews, ...testimonials.filter((review) => review.is_published).slice(0, 3)];
   const galleryPreview = gallery.slice(0, 4);
   const whatsapp = `https://wa.me/${settings.whatsapp || fallbackSettings.whatsapp}`;
 
@@ -36,7 +57,7 @@ export default function Home() {
           <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.24em] text-gold">
             <span className="h-px w-8 bg-gold" /> Bengaluru&rsquo;s grill house
           </div>
-          <h1 className="mt-4 font-display font-bold text-display-hero text-warm sm:mt-6 sm:text-7xl lg:text-[6.1rem] lg:leading-[.95]">
+          <h1 className="mt-4 whitespace-nowrap font-display font-bold text-display-hero text-warm sm:mt-6 sm:text-7xl lg:text-[clamp(4rem,6.5vw,6.1rem)] lg:leading-[.95]">
             Good food.<br /><span className="text-gold">Great mood.</span>
           </h1>
           <p className="mt-4 max-w-xl text-sm leading-6 text-white/70 sm:mt-7 sm:text-base sm:leading-7">
@@ -66,7 +87,20 @@ export default function Home() {
 
     <section className="border-y border-white/10 bg-charcoal/40"><div className="mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8 lg:py-24"><div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end sm:gap-8"><SectionHeading eyebrow="A taste of THE BGM" title="Straight from our table" /><Link href="/gallery" className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-gold">See all images <ArrowUpRight size={16} /></Link></div>{galleryPreview.length ? <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-4 lg:grid-cols-4">{galleryPreview.map((image) => <Link href="/gallery" key={image.id} className="group aspect-square overflow-hidden rounded-2xl border border-white/10"><img src={image.image_url} alt={image.caption || 'THE BGM food and restaurant gallery'} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy" /></Link>)}</div> : <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-4 lg:grid-cols-4"><div className="col-span-2 row-span-2 overflow-hidden rounded-2xl border border-white/10"><img src="/images/food/image.png" alt="THE BGM signature food" className="h-full w-full object-cover" /></div><div className="overflow-hidden rounded-2xl border border-white/10"><img src="/images/menu/image.png" alt="THE BGM menu" className="h-full w-full object-cover" /></div><div className="flex items-center justify-center rounded-2xl border border-gold/25 bg-deepRed p-6 text-center"><p className="font-display text-2xl italic text-gold">Good food.<br />Great mood.</p></div></div>}</div></section>
 
-    <section className="mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8 lg:py-24"><SectionHeading eyebrow="Your experience matters" title="What our guests say" copy={reviewPreview.length ? 'Kind words from guests who have shared their experience.' : undefined} />{reviewPreview.length ? <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-5 md:grid-cols-3">{reviewPreview.map((review) => <article key={review.id} className="rounded-2xl border border-white/10 bg-charcoal p-5 sm:p-6"><div className="flex gap-1 text-gold">{Array.from({ length: review.rating }).map((_, index) => <span key={index}>★</span>)}</div><p className="mt-4 leading-7 text-white/70 sm:mt-5">&ldquo;{review.review_text}&rdquo;</p><p className="mt-5 text-sm font-bold text-white sm:mt-6">{review.customer_name}</p></article>)}</div> : <div className="mt-10 rounded-2xl border border-dashed border-gold/30 bg-charcoal/50 px-6 py-14 text-center"><p className="font-display text-2xl italic text-gold">Your experience matters.</p><p className="mt-3 text-sm text-white/50">Customer reviews will appear here soon.</p></div>}</section>
+    <section className="mx-auto max-w-7xl px-5 py-14 sm:py-20 lg:px-8 lg:py-24">
+      <SectionHeading eyebrow="Your experience matters" title="What our guests say" copy="Kind words from guests who have shared their experience." />
+      <div className="mt-8 grid gap-4 sm:mt-10 sm:gap-5 md:grid-cols-3">
+        {reviewPreview.map((review) => (
+          <article key={review.id} className="rounded-2xl border border-white/10 bg-charcoal p-5 sm:p-6">
+            <div role="img" aria-label={`${review.rating} out of 5 stars`} className="flex gap-1 text-gold">
+              {Array.from({ length: review.rating }, (_, index) => <span key={index} aria-hidden="true">★</span>)}
+            </div>
+            <p className="mt-4 leading-7 text-white/70 sm:mt-5">&ldquo;{review.review_text}&rdquo;</p>
+            {review.customer_name && <p className="mt-5 text-sm font-bold text-white sm:mt-6">{review.customer_name}</p>}
+          </article>
+        ))}
+      </div>
+    </section>
 
     <section className="relative overflow-hidden bg-red px-5 py-14 text-center sm:py-20"><div className="absolute inset-0 opacity-20 [background-image:linear-gradient(135deg,transparent_0,transparent_48%,rgba(255,209,90,.5)_49%,transparent_50%)] [background-size:28px_28px]" /><div className="relative mx-auto max-w-3xl"><p className="eyebrow text-white/80">The table is waiting</p><h2 className="mt-3 font-display text-3xl font-bold text-white sm:mt-4 sm:text-6xl">Craving something delicious?</h2><p className="mx-auto mt-4 max-w-lg text-sm leading-6 text-white/80 sm:mt-5">Visit THE BGM or order your favourites on WhatsApp.</p><div className="mt-7 flex flex-col justify-center gap-3 sm:mt-8 sm:flex-row"><Link href="/menu" className="rounded-full bg-gold px-7 py-3.5 text-sm font-extrabold uppercase tracking-wider text-ink transition hover:bg-brightGold">Order now</Link><a href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(settings.map_query)}`} target="_blank" rel="noreferrer" className="rounded-full border border-white/40 px-7 py-3.5 text-sm font-extrabold uppercase tracking-wider text-white transition hover:bg-white hover:text-red">Get directions</a></div></div></section>
   </PageFrame>;
