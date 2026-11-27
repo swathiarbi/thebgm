@@ -14,13 +14,17 @@ const navItems = [
   { href: '/gallery', label: 'Gallery' },
 ];
 
-export function BrandMark({ compact = false }: { compact?: boolean }) {
+export function BrandMark({ compact = false, header = false }: { compact?: boolean; header?: boolean }) {
   return (
     <Link href="/" className="flex items-center gap-3" aria-label="The BGM home">
       <img src="/images/logo/Untitled_Design_(2).png" alt="THE BGM logo" className={compact ? 'h-11 w-11 object-contain' : 'h-14 w-14 object-contain'} />
-      {!compact && <span className="hidden sm:block">
-        <span className="block font-display text-[1.25rem] font-bold leading-none tracking-wide text-gold">THE BGM</span>
-        <span className="mt-1 block text-[0.58rem] uppercase tracking-[0.28em] text-white/60">The Bangalore Grills & More</span>
+      {!compact && <span className={header ? 'block' : 'hidden sm:block'}>
+        {header ? (
+          <span className="block whitespace-nowrap font-display text-2xl font-bold italic leading-none text-white">The BGM</span>
+        ) : (
+          <span className="block font-display text-[1.25rem] font-bold leading-none tracking-wide text-gold">THE BGM</span>
+        )}
+        <span className="mt-1 hidden text-[0.58rem] uppercase tracking-[0.28em] text-white/60 sm:block">The Bangalore Grills & More</span>
       </span>}
     </Link>
   );
@@ -34,7 +38,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-ink/90 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5 sm:px-5 lg:px-8 lg:py-3">
-        <BrandMark />
+        <BrandMark header />
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Main navigation">
           {navItems.map((item) => <Link key={item.href} href={item.href} className={`text-xs font-semibold uppercase tracking-[0.18em] transition-colors hover:text-gold ${pathname === item.href ? 'text-gold' : 'text-white/70'}`}>{item.label}</Link>)}
         </nav>

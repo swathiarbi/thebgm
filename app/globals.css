@@ -17,7 +17,8 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-html, body { overflow-x: hidden; max-width: 100%; }
+html { overflow-x: hidden; }
+html, body { max-width: 100%; }
 body { margin: 0; background: var(--ink); color: var(--warm); font-family: Arial, Helvetica, sans-serif; }
 button, a { -webkit-tap-highlight-color: transparent; }
 button { cursor: pointer; }
